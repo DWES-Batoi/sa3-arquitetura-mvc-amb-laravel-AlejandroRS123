@@ -5,12 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
-class EstadisController extends Controller
+class EstadiController extends Controller
 {
     public $estadis = [
-        ['nom' => 'Estadi Johan Cruyff', 'ciutat' => 'Sant Joan Despí', 'capacitat' => 6000, 'equip_principal' => 'FC Barcelona Femení'],
-        ['nom' => 'Centro Deportivo Wanda Alcalá de Henares', 'ciutat' => 'Alcalá de Henares', 'capacitat' => 2800, 'equip_principal' => 'Atlètic de Madrid Femení'],
-        ['nom' => 'Estadio Alfredo Di Stéfano', 'ciutat' => 'Madrid', 'capacitat' => 6000, 'equip_principal' => 'Real Madrid Femení'],
+        ['nom' => 'Estadi Johan Cruyff', 'ciutat' => 'Sant Joan Despí', 'capacitat' => 6000, 'equipPrincipal' => 'FC Barcelona Femení'],
+        ['nom' => 'Centro Deportivo Wanda Alcalá de Henares', 'ciutat' => 'Alcalá de Henares', 'capacitat' => 2800, 'equipPrincipal' => 'Atlètic de Madrid Femení'],
+        ['nom' => 'Estadio Alfredo Di Stéfano', 'ciutat' => 'Madrid', 'capacitat' => 6000, 'equipPrincipal' => 'Real Madrid Femení'],
     ];
 
     public function index()
@@ -24,7 +24,7 @@ class EstadisController extends Controller
         $estadis = Session::get('estadis', $this->estadis);
         abort_if(!isset($estadis[$id]), 404);
         $estadi = $estadis[$id];
-        return view('estadis.show', compact('estadi'));
+        return view('estadis.store', compact('estadi'));
     }
 
     public function create()
@@ -37,7 +37,7 @@ class EstadisController extends Controller
         $validated = $request->validate([
             'nom' => 'required|min:3',
             'ciutat' => 'required|min:2',
-            'equip_principal' => 'required|min:3',
+            'equipPrincipal' => 'required|min:3',
             'capacitat' => 'required|integer|min:0',
         ]);
 

@@ -29,7 +29,7 @@
             </td>
             <td class="border border-gray-300 p-2">{{ $estadi['ciutat'] }}</td>
             <td class="border border-gray-300 p-2">{{ $estadi['capacitat'] }}</td>
-            <td class="border border-gray-300 p-2">{{ $estadi['equip_principal'] }}</td>
+            <td class="border border-gray-300 p-2">{{ $estadi['equipPrincipal'] }}</td>
         </tr>
         @endforeach
     </tbody>

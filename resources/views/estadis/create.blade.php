@@ -23,12 +23,12 @@
         <input type="text" name="ciutat" id="ciutat" value="{{ old('ciutat') }}" class="border p-2 w-full">
     </div>
     <div>
-        <label for="capacitat" class="block font-bold">Títols:</label>
+        <label for="capacitat" class="block font-bold">Capacitat:</label>
         <input type="number" name="capacitat" id="capacitat" value="{{ old('capacitat') }}" class="border p-2 w-full">
     </div>
     <div>
-        <label for="equip_principal" class="block font-bold">Ciutat:</label>
-        <input type="text" name="equip_principal" id="equip_principal" value="{{ old('equip_principal') }}" class="border p-2 w-full">
+        <label for="equipPrincipal" class="block font-bold">Equip principal:</label>
+        <input type="text" name="equipPrincipal" id="equipPrincipal" value="{{ old('equipPrincipal') }}" class="border p-2 w-full">
     </div>
     <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Afegir</button>
 </form>
