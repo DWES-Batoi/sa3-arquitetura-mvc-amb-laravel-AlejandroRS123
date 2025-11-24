@@ -1,5 +1,5 @@
-<div class="p-4 bg-white shadow rounded">
-    <h1 class="text-2xl font-bold mb-2">Partido de Premier League</h1>
+<div class="p-4 bg-orange-extra-light shadow rounded">
+    <h1 class="text-2xl font-bold mb-2 text-orange-dark">Partido de Premier League</h1>
     <p><strong>Equip local:</strong> {{ $local }}</p>
     <p><strong>Equip visitant:</strong> {{ $visitant }}</p>
     <p><strong>Data:</strong> {{ $data }}</p>

@@ -27,6 +27,6 @@
         <input type="text" name="posicio" id="posicio" value="{{ old('posicio') }}" 
         placeholder="Portera, Defensa, Migcampista, Davantera" class="border p-2 w-full">
     </div>
-    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Afegir</button>
+    <button type="submit" class="bg-violet-medium font-bold text-white px-4 py-2 rounded">Afegir</button>
 </form>
 @endsection

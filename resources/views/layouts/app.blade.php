@@ -7,13 +7,13 @@
   @vite(['resources/css/app.css' ])
 </head>
 <body class="font-sans bg-gray-100 text-gray-900">
-  <header class="bg-blue-800 text-white p-4">
+  <header class="bg-sky-400 text-white p-4">
     @include('partials.menu')
   </header>
   <main class="container mx-auto p-6">
     @yield('content')
   </main>
-  <footer class="bg-blue-800 text-white text-center p-4">
+  <footer class="bg-sky-400 text-black font-bold text-center p-4">
     <p>&copy; 2025 Guia de Futbol Femení</p>
   </footer>
 </body>

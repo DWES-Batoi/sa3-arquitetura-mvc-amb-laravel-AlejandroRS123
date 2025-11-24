@@ -2,14 +2,14 @@
 @section('title', "Guia d'Estadis")
 
 @section('content')
-<h1 class="text-3xl font-bold text-blue-800 mb-6">Guia d'Estadis</h1>
+<h1 class="text-3xl font-bold text-green-dark mb-6">Guia d'Estadis</h1>
 
 @if (session('success'))
-<div class="bg-green-100 text-green-700 p-2 mb-4">{{ session('success') }}</div>
+<div class="bg-green-light text-green-dark p-2 mb-4">{{ session('success') }}</div>
 @endif
 
 <p class="mb-4">
-    <a href="{{ route('estadis.create') }}" class="bg-blue-600 text-white px-3 py-2 rounded">Nou estadi</a>
+    <a href="{{ route('estadis.create') }}" class="bg-green-medium text-white font-bold px-3 py-2 rounded">Nou estadi</a>
 </p>
 
 <table class="w-full border-collapse border border-gray-300">
@@ -25,7 +25,7 @@
         @foreach($estadis as $key => $estadi)
         <tr class="hover:bg-gray-100">
             <td class="border border-gray-300 p-2">
-                <a href="{{ route('estadis.show', $key) }}" class="text-blue-700 hover:underline">{{ $estadi['nom'] }}</a>
+                <a href="{{ route('estadis.show', $key) }}" class="font-bold text-green-medium hover:underline">{{ $estadi['nom'] }}</a>
             </td>
             <td class="border border-gray-300 p-2">{{ $estadi['ciutat'] }}</td>
             <td class="border border-gray-300 p-2">{{ $estadi['capacitat'] }}</td>

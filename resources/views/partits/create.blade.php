@@ -31,6 +31,6 @@
         <input type="resultat" name="resultat" id="resultat" value="{{ old('resultat') }}"
             placeholder="x-x" class="border p-2 w-full">
     </div>
-    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Afegir</button>
+    <button type="submit" class="bg-orange-medium font-bold text-white px-4 py-2 rounded">Afegir</button>
 </form>
 @endsection
