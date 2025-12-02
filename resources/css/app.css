@@ -1,0 +1,79 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+
+    /* Nuevos colores rojos */
+    --color-red-light: #ffc1c1;
+    --color-red-medium: #ff6b6b;
+    --color-red-dark: #c70039;
+    --color-red-extra-light: #ffe5e5;
+
+    /* Nuevos colores verdes */
+    --color-green-light: #a3d9a3;
+    --color-green-medium: #4db84d;
+    --color-green-dark: #006233;
+    --color-green-extra-light: #d6edd6;
+
+    /* Nuevos colores violetas */
+    --color-violet-light: #e0c1ff;
+    --color-violet-medium: #b06bff;
+    --color-violet-dark: #5a007a;
+    --color-violet-extra-light: #f2e5ff;
+
+    /* Nuevos colores naranjas */
+    --color-orange-light: #ffd8b1;
+    --color-orange-medium: #ff9f6b;
+    --color-orange-dark: #c76a00;
+    --color-orange-extra-light: #fff0e5;
+}
+
+/* Utilidades personalizadas */
+@layer utilities {
+    /* Rojos */
+    .text-red-light { color: var(--color-red-light); }
+    .text-red-medium { color: var(--color-red-medium); }
+    .text-red-dark { color: var(--color-red-dark); }
+
+    .bg-red-light { background-color: var(--color-red-light); }
+    .bg-red-medium { background-color: var(--color-red-medium); }
+    .bg-red-dark { background-color: var(--color-red-dark); }
+    .bg-red-extra-light { background-color: var(--color-red-extra-light); }
+
+    /* Verdes */
+    .text-green-light { color: var(--color-green-light); }
+    .text-green-medium { color: var(--color-green-medium); }
+    .text-green-dark { color: var(--color-green-dark); }
+
+    .bg-green-light { background-color: var(--color-green-light); }
+    .bg-green-medium { background-color: var(--color-green-medium); }
+    .bg-green-dark { background-color: var(--color-green-dark); }
+    .bg-green-extra-light { background-color: var(--color-green-extra-light); }
+
+    /* Violetas */
+    .text-violet-light { color: var(--color-violet-light); }
+    .text-violet-medium { color: var(--color-violet-medium); }
+    .text-violet-dark { color: var(--color-violet-dark); }
+
+    .bg-violet-light { background-color: var(--color-violet-light); }
+    .bg-violet-medium { background-color: var(--color-violet-medium); }
+    .bg-violet-dark { background-color: var(--color-violet-dark); }
+    .bg-violet-extra-light { background-color: var(--color-violet-extra-light); }
+
+    /* Naranjas */
+    .text-orange-light { color: var(--color-orange-light); }
+    .text-orange-medium { color: var(--color-orange-medium); }
+    .text-orange-dark { color: var(--color-orange-dark); }
+
+    .bg-orange-light { background-color: var(--color-orange-light); }
+    .bg-orange-medium { background-color: var(--color-orange-medium); }
+    .bg-orange-dark { background-color: var(--color-orange-dark); }
+    .bg-orange-extra-light { background-color: var(--color-orange-extra-light); }
+}
+
